@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+h1 {
+    color: #333;
+}
+.upload-area {
+    border: 2px dashed #007BFF;
+    border-radius: 10px;
+    padding: 50px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    color: #007BFF;
+}
+.upload-area.dragover {
+    background-color: #e9f5ff;
+}
+.upload-area input {
+    display: none;
+}
+.upload-area p {
+    margin: 10px 0 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+.submit-btn {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+.loader {
+    display: none;
+    border: 5px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 5px solid #3498db;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+    margin: 10px auto;
+}
+
+/* Style for dynamically generated input fields */
+
+.dynamic-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: 50px;
+}
+
+.dynamic-form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.dynamic-form input[type="number"]:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.dynamic-form label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.dynamic-form button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.dynamic-form button:hover {
+    background-color: #0056b3;
+}
+
+.mv-value {
+    font-size: x-large;
+    font-weight: 400;
+    margin-top: 55px;
+    display: inline-block;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 16px; /* Space between items */
+    margin: 16px 0; /* Optional margin */
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 4px; /* Spacing between label and input */
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; 
+    margin-top: 16px;
+}
+
+button {
+    padding: 10px 20px; 
+    font-size: 16px; 
+    cursor: pointer; 
+}
+
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
